@@ -16,49 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="bAT-c6-bbq">
-                                <rect key="frame" x="20" y="44" width="374" height="408"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="bAT-c6-bbq">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Player" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-Ie-6bh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="103"/>
                                         <accessibility key="accessibilityConfiguration" label="Player One Text Field"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="374" id="Qso-Bv-N3r"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-CI-3Le" userLabel="player_one_stats">
-                                        <rect key="frame" x="0.0" y="45" width="26.5" height="245"/>
+                                        <rect key="frame" x="0.0" y="114" width="374" height="245"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffz-kW-tsW">
-                                                <rect key="frame" x="0.0" y="0.0" width="26.5" height="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXw-FY-hpG">
-                                                <rect key="frame" x="0.0" y="77" width="26.5" height="14"/>
+                                                <rect key="frame" x="0.0" y="77" width="374" height="14"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyX-ms-PsP">
-                                                <rect key="frame" x="0.0" y="154" width="26.5" height="14"/>
+                                                <rect key="frame" x="0.0" y="154" width="374" height="14"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9J9-rI-v3q" userLabel="Player One Blocks Label">
-                                                <rect key="frame" x="0.0" y="231" width="26.5" height="14"/>
+                                                <rect key="frame" x="0.0" y="231" width="374" height="14"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uyw-rn-MQo" userLabel="Center_Title_View">
-                                        <rect key="frame" x="0.0" y="301" width="374" height="107"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyw-rn-MQo" userLabel="Center_Title_View">
+                                        <rect key="frame" x="0.0" y="370" width="374" height="107"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Center_Title" translatesAutoresizingMaskIntoConstraints="NO" id="O1Y-Mo-I4d">
-                                                <rect key="frame" x="104" y="20" width="166.5" height="66.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Center_Title" translatesAutoresizingMaskIntoConstraints="NO" id="O1Y-Mo-I4d">
+                                                <rect key="frame" x="104" y="20.5" width="166.5" height="66.5"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,9 +70,55 @@
                                             <constraint firstItem="O1Y-Mo-I4d" firstAttribute="centerY" secondItem="uyw-rn-MQo" secondAttribute="centerY" id="odQ-z5-XoV"/>
                                         </constraints>
                                     </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-ac-CKH" userLabel="player_two_stats">
+                                        <rect key="frame" x="0.0" y="488" width="374" height="245"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nag-y7-7Ry">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQ0-Iy-oMv">
+                                                <rect key="frame" x="0.0" y="77" width="374" height="14"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3b-Va-qjD">
+                                                <rect key="frame" x="0.0" y="154" width="374" height="14"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPf-HT-jWP" userLabel="Player One Blocks Label">
+                                                <rect key="frame" x="0.0" y="231" width="374" height="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Player" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anH-fd-Rup">
+                                        <rect key="frame" x="0.0" y="744" width="374" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" label="Player Two Text Field"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="374" id="ph7-Sb-9cT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="anH-fd-Rup" secondAttribute="bottom" constant="10" id="Hzb-DW-d59"/>
+                                    <constraint firstItem="jAp-CI-3Le" firstAttribute="top" secondItem="bgN-Ie-6bh" secondAttribute="bottom" constant="10" id="MGl-tk-eUr"/>
+                                    <constraint firstItem="bgN-Ie-6bh" firstAttribute="top" secondItem="bAT-c6-bbq" secondAttribute="top" constant="10" id="Qtx-cU-Aub"/>
+                                    <constraint firstItem="F5w-ac-CKH" firstAttribute="centerX" secondItem="bAT-c6-bbq" secondAttribute="centerX" id="Xzf-Hn-eft"/>
+                                    <constraint firstItem="jAp-CI-3Le" firstAttribute="centerX" secondItem="bAT-c6-bbq" secondAttribute="centerX" id="eJL-gi-iVV"/>
+                                    <constraint firstItem="uyw-rn-MQo" firstAttribute="top" secondItem="jAp-CI-3Le" secondAttribute="bottom" constant="11" id="qXk-iO-Dxb"/>
                                     <constraint firstItem="bgN-Ie-6bh" firstAttribute="centerX" secondItem="bAT-c6-bbq" secondAttribute="centerX" id="rRf-Vb-5MQ"/>
+                                    <constraint firstItem="anH-fd-Rup" firstAttribute="top" secondItem="F5w-ac-CKH" secondAttribute="bottom" constant="15" id="u7l-1e-MHq"/>
+                                    <constraint firstItem="uyw-rn-MQo" firstAttribute="centerX" secondItem="bAT-c6-bbq" secondAttribute="centerX" id="zXc-bu-Hs2"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -78,6 +127,7 @@
                         <constraints>
                             <constraint firstItem="bAT-c6-bbq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PrW-CD-k9L"/>
                             <constraint firstAttribute="trailing" secondItem="bAT-c6-bbq" secondAttribute="trailing" constant="20" id="Q2P-ax-eC7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bAT-c6-bbq" secondAttribute="bottom" constant="20" id="bFp-SO-nN5"/>
                             <constraint firstItem="bAT-c6-bbq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="q8l-Fr-J0I"/>
                         </constraints>
                     </view>
@@ -87,6 +137,11 @@
                         <outlet property="playerOnePointsLabel" destination="ffz-kW-tsW" id="3x8-X5-AW6"/>
                         <outlet property="playerOneReboundsLabel" destination="KyX-ms-PsP" id="S14-mV-2kD"/>
                         <outlet property="playerOneSearchTextField" destination="bgN-Ie-6bh" id="j38-fl-W80"/>
+                        <outlet property="playerTwoAssistsLabel" destination="AQ0-Iy-oMv" id="Ykz-lq-RTM"/>
+                        <outlet property="playerTwoBlocksLabel" destination="zPf-HT-jWP" id="Jka-zF-Ijw"/>
+                        <outlet property="playerTwoPointsLabel" destination="nag-y7-7Ry" id="dam-Cb-ZCg"/>
+                        <outlet property="playerTwoReboundsLabel" destination="c3b-Va-qjD" id="A5A-PM-lCL"/>
+                        <outlet property="playerTwoSearchTextField" destination="anH-fd-Rup" id="JGN-qu-wri"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
